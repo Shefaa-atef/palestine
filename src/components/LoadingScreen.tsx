@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useProgress } from '@react-three/drei'
 import type { Language } from '../data/artifacts'
 
@@ -7,11 +7,11 @@ const MINIMUM_DISPLAY_MS = 900
 export default function LoadingScreen({ language }: { language: Language }) {
     const { active, progress } = useProgress()
     const [minimumElapsed, setMinimumElapsed] = useState(false)
-    const [started, setStarted] = useState(false)
+    const started = useRef(false)
     const [visible, setVisible] = useState(true)
 
     useEffect(() => {
-        if (active || progress > 0) setStarted(true)
+        if (active || progress > 0) started.current = true
     }, [active, progress])
 
     useEffect(() => {
@@ -20,7 +20,7 @@ export default function LoadingScreen({ language }: { language: Language }) {
     }, [])
 
     useEffect(() => {
-        if (!minimumElapsed || active || !started) return
+        if (!minimumElapsed || active || !started.current) return
         const timer = window.setTimeout(() => setVisible(false), 320)
         return () => window.clearTimeout(timer)
     }, [active, minimumElapsed, started])
