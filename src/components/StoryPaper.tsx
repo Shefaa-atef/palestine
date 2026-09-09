@@ -14,12 +14,12 @@ export default function StoryPaper({ index, language, reduced, shellRef, onSelec
   const heading = useRef<HTMLHeadingElement>(null), artifact = artifacts[index], story = language === 'ar' ? artifact.ar : artifact
   const reading = useRef<HTMLDivElement>(null), [more, setMore] = useState(false)
   useEffect(() => {
-    const el=reading.current!
-    const update=()=>setMore(el.scrollHeight-el.clientHeight-el.scrollTop>12)
-    const observer=new ResizeObserver(update);observer.observe(el)
-    el.addEventListener('scroll',update,{passive:true})
-    return()=>{observer.disconnect();el.removeEventListener('scroll',update)}
-  },[index])
+    const el = reading.current!
+    const update = () => setMore(el.scrollHeight - el.clientHeight - el.scrollTop > 12)
+    const observer = new ResizeObserver(update); observer.observe(el)
+    el.addEventListener('scroll', update, { passive: true })
+    return () => { observer.disconnect(); el.removeEventListener('scroll', update) }
+  }, [index])
   useLayoutEffect(() => {
     const tween = gsap.fromTo(shellRef.current,
       { autoAlpha: 0, y: reduced ? 0 : 95, rotateX: reduced ? 0 : -12, rotation: reduced ? 0 : -4, scale: reduced ? 1 : .94 },
@@ -32,7 +32,7 @@ export default function StoryPaper({ index, language, reduced, shellRef, onSelec
       <div className="paper-reading" ref={reading} key={`${index}-${language}`} tabIndex={0} aria-label={arabic ? 'مرّر لقراءة الحكاية' : 'Scroll the story'}>
         <h2 id="story-title" ref={heading} tabIndex={-1}>{story.title}</h2>
         <p className="paper-subtitle">{story.subtitle}</p>
-        <div className="paper-rule"/>
+        <div className="paper-rule" />
         <div className="story-body">{story.body.map(p => <p key={p}>{p}</p>)}</div>
         <blockquote>{story.quote}</blockquote>
         <p className="paper-keywords">{story.keywords}</p>
