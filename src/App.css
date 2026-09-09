@@ -1,0 +1,1313 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Inter:wght@400;500;600&family=Noto+Serif+Arabic:wght@400;500;600&display=swap');
+
+:root {
+    font-family: Inter, Arial, sans-serif;
+    color: #e3dccb;
+    background: #080706;
+    font-synthesis: none;
+    font-weight: 400
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent
+}
+
+button {
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    border: 0;
+    background: none
+}
+
+a {
+    color: inherit;
+    text-decoration: none
+}
+
+button:focus-visible,
+a:focus-visible,
+[tabindex]:focus-visible {
+    outline: 1px solid #c3a575;
+    outline-offset: 6px
+}
+
+.experience {
+    position: relative;
+    isolation: isolate;
+    height: 100svh;
+    min-height: 700px;
+    overflow: hidden;
+    background: #080706
+}
+
+.experience:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 8;
+    pointer-events: none;
+    opacity: .027;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23fff' filter='url(%23n)' opacity='.5' d='M0 0h180v180H0z'/%3E%3C/svg%3E")
+}
+
+.scene-wrap {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    touch-action: none
+}
+
+.scene-wrap:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(to bottom, #08070670, transparent 18%, transparent 81%, #080706b0)
+}
+
+header {
+    height: 110px;
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 6
+}
+
+.wordmark {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 3.6px;
+    line-height: 1.7
+}
+
+.wordmark small {
+    display: block;
+    font-size: 8px;
+    letter-spacing: 4.1px
+}
+
+.brand-symbol {
+    font: 37px Georgia, serif;
+    color: #bba680
+}
+
+.header-note,
+.edition {
+    font-size: 8px;
+    letter-spacing: 2px;
+    color: #9f9179
+}
+
+.header-note {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.edition {
+    color: #716959
+}
+
+.close-story {
+    font-size: 9px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    padding: 10px 0
+}
+
+.close-story span {
+    font: 29px Georgia, serif;
+    color: #c7b18e
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 25px
+}
+
+.language-toggle {
+    border-bottom: 1px solid #78654b;
+    padding: 8px 0;
+    color: #c6b496;
+    font-size: 8px;
+    letter-spacing: 1.3px
+}
+
+.language-toggle:hover {
+    color: #fff1d4;
+    border-color: #c7a778
+}
+
+.hero-copy {
+    position: absolute;
+    left: 8%;
+    top: 30%;
+    max-width: 480px;
+    z-index: 3
+}
+
+.eyebrow {
+    font-size: 8px;
+    letter-spacing: 2.4px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    color: #baaa8e
+}
+
+.eyebrow span {
+    width: 26px;
+    height: 1px;
+    background: #a28b65
+}
+
+h1 {
+    font: 400 clamp(66px, 6.2vw, 98px)/.99 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: -3px;
+    margin: 30px 0 24px;
+    color: #e9e1cf
+}
+
+h1 em {
+    font-weight: 400;
+    color: #c5a87e
+}
+
+.intro {
+    font-size: 11px;
+    line-height: 2;
+    color: #9e9789;
+    letter-spacing: .25px
+}
+
+.explore {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-size: 9px;
+    letter-spacing: 2.1px;
+    margin-top: 35px;
+    padding: 14px 0;
+    border-bottom: 1px solid #78654b
+}
+
+.explore span {
+    font-size: 22px;
+    line-height: 1;
+    color: #cfb182
+}
+
+.explore:hover {
+    color: #fff1d4;
+    border-color: #c7a778
+}
+
+.collection-nav {
+    position: absolute;
+    bottom: 85px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    z-index: 5
+}
+
+.collection-nav button {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 13px 0;
+    white-space: nowrap;
+    border-bottom: 1px solid transparent;
+    transition: color .3s, border-color .3s;
+    color: #9a8f7c
+}
+
+.nav-number {
+    font: italic 15px 'Cormorant Garamond', Georgia, serif;
+    color: #756957
+}
+
+.nav-name {
+    text-transform: uppercase;
+    font-size: 8px;
+    letter-spacing: 1.8px
+}
+
+.collection-nav button:hover,
+.collection-nav button.active {
+    color: #ecd8b5;
+    border-color: #a28357
+}
+
+.collection-nav button.active .nav-number {
+    color: #d7b883
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 5%;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    font-size: 7px;
+    letter-spacing: 1.8px;
+    color: #77705f
+}
+
+.footer-note {
+    color: #554f42;
+    font-size: 6px
+}
+
+.sound {
+    font-size: 7px;
+    letter-spacing: 1.6px;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    padding: 12px 0
+}
+
+.sound span {
+    font-size: 16px;
+    color: #aa997d
+}
+
+.artifact-label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 8px;
+    letter-spacing: 2px;
+    padding: 9px 0;
+    color: #e2caa5;
+    border-bottom: 1px solid #b3976c;
+    text-shadow: 0 2px 8px #000
+}
+
+.artifact-label span {
+    margin-left: 15px
+}
+
+.object-caption {
+    position: absolute;
+    left: 69%;
+    bottom: 21%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    align-items: center;
+    z-index: 3;
+    pointer-events: none;
+    white-space: nowrap
+}
+
+.object-caption>span {
+    font: italic 25px 'Cormorant Garamond', Georgia, serif;
+    color: #c2aa86
+}
+
+.object-caption small {
+    font-size: 7px;
+    letter-spacing: 2px;
+    color: #8e7d62
+}
+
+/* The document is its own physical surface, with a quiet ink reading area. */
+.paper-shell {
+    position: absolute;
+    left: 8%;
+    top: 15%;
+    width: min(37%, 515px);
+    height: 70%;
+    z-index: 4;
+    transform-origin: 50% 90%;
+    filter: drop-shadow(12px 25px 28px #0009);
+    perspective: 1000px
+}
+
+.paper-document {
+    height: 100%;
+    padding: 30px 37px 24px;
+    background-color: #e0cba7;
+    background-image: var(--archive-paper);
+    background-position: center;
+    background-size: 100% 100%;
+    background-blend-mode: multiply;
+    color: #382c1d;
+    display: flex;
+    flex-direction: column;
+    clip-path: polygon(.4% .1%, 12% .3%, 23% .1%, 36% .4%, 51% .1%, 66% .3%, 79% 0, 91% .3%, 99.5% .1%, 99.8% 12%, 99.5% 29%, 100% 47%, 99.6% 63%, 99.9% 83%, 99.6% 99.8%, 88% 99.6%, 71% 100%, 55% 99.7%, 38% 99.9%, 21% 99.6%, .2% 99.9%, .4% 81%, 0 63%, .3% 41%, 0 22%);
+    box-shadow: inset 0 0 45px #96734535
+}
+
+.paper-masthead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    font-family: Georgia, serif;
+    font-size: 8px;
+    letter-spacing: 1px;
+    color: #776246;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #7e684940
+}
+
+.paper-reading {
+    min-height: 0;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #92754d50 transparent;
+    margin-top: 25px;
+    padding: 0 8px 0 0
+}
+
+.paper-kicker {
+    font-size: 7px;
+    letter-spacing: 2px;
+    color: #89704e
+}
+
+.paper-reading h2 {
+    font: 500 clamp(40px, 4vw, 63px)/1 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: -1.4px;
+    margin: 17px 0 12px;
+    outline: none;
+    color: #362717
+}
+
+.paper-subtitle {
+    font-size: 8px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    line-height: 1.6;
+    margin: 0;
+    color: #795a36
+}
+
+.paper-rule {
+    width: 38px;
+    height: 1px;
+    background: #8f7250;
+    margin: 22px 0
+}
+
+.story-body {
+    font: 16px/1.65 'Cormorant Garamond', Georgia, serif;
+    font-weight: 500;
+    color: #463725
+}
+
+.story-body p {
+    margin: 0 0 13px
+}
+
+.paper-document blockquote {
+    font: italic 500 25px/1.2 'Cormorant Garamond', Georgia, serif;
+    color: #705333;
+    margin: 25px 0 23px;
+    white-space: pre-line
+}
+
+.paper-keywords {
+    font-size: 7px;
+    letter-spacing: 1.2px;
+    line-height: 1.8;
+    color: #846b4c;
+    margin: 0 0 12px
+}
+
+.paper-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    padding-top: 16px;
+    margin-top: 16px;
+    border-top: 1px solid #7e684936;
+    font: italic 12px 'Cormorant Garamond', Georgia, serif;
+    color: #806849
+}
+
+.paper-footer span:last-child {
+    font: 9px Georgia, serif
+}
+
+.paper-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 19px;
+    gap: 10px
+}
+
+.paper-controls button {
+    font-size: 7px;
+    letter-spacing: 1.1px;
+    color: #ad9877;
+    padding: 7px 0
+}
+
+.paper-controls button:hover {
+    color: #e6cfab
+}
+
+.is-story .collection-nav {
+    left: 69%;
+    gap: 22px;
+    bottom: 10.5%
+}
+
+.is-story .collection-nav .nav-name {
+    display: none
+}
+
+.is-story .nav-number {
+    font-size: 17px
+}
+
+.is-story .collection-nav button {
+    padding: 8px 3px
+}
+
+.loading {
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    background: #080706;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    font-size: 9px;
+    letter-spacing: 3px
+}
+
+.loading progress {
+    width: 100px;
+    height: 2px;
+    accent-color: #b89c71
+}
+
+.canvas-loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: italic 23px 'Cormorant Garamond', Georgia, serif;
+    color: #ac9270
+}
+
+@media(min-width:1700px) {
+    .hero-copy {
+        top: 33%
+    }
+
+    .paper-shell {
+        left: 12%;
+        width: 510px;
+        top: 16%;
+        height: 67%
+    }
+}
+
+@media(max-width:1100px) and (min-width:701px) {
+    .hero-copy {
+        left: 5%;
+        max-width: 370px
+    }
+
+    h1 {
+        font-size: 74px
+    }
+
+    .header-note {
+        display: none
+    }
+
+    .paper-shell {
+        left: 5%;
+        width: 42%
+    }
+
+    .paper-document {
+        padding: 25px 28px
+    }
+
+    .collection-nav {
+        gap: 25px
+    }
+
+    .is-story .collection-nav {
+        left: 75%
+    }
+
+    .object-caption {
+        left: 75%
+    }
+}
+
+@media(max-width:700px) {
+    .experience {
+        min-height: 780px
+    }
+
+    header {
+        left: 6%;
+        right: 6%;
+        height: 84px
+    }
+
+    .brand-symbol {
+        font-size: 29px
+    }
+
+    .wordmark {
+        font-size: 10px;
+        letter-spacing: 2.6px;
+        gap: 10px
+    }
+
+    .wordmark small {
+        font-size: 7px;
+        letter-spacing: 2.7px
+    }
+
+    .header-note {
+        display: none
+    }
+
+    .edition {
+        font-size: 6px;
+        letter-spacing: 1px
+    }
+
+    .hero-copy {
+        top: 119px;
+        left: 8%;
+        max-width: none
+    }
+
+    .eyebrow {
+        font-size: 7px;
+        letter-spacing: 1.7px
+    }
+
+    h1 {
+        font-size: 61px;
+        letter-spacing: -2px;
+        margin: 21px 0 15px
+    }
+
+    .intro {
+        font-size: 10px;
+        line-height: 1.8
+    }
+
+    .explore {
+        font-size: 8px;
+        margin-top: 15px;
+        padding: 9px 0;
+        gap: 25px
+    }
+
+    .scene-wrap {
+        top: 35%;
+        bottom: 12%;
+        left: -4%;
+        right: -4%
+    }
+
+    .scene-wrap:after {
+        background: linear-gradient(to bottom, #080706, transparent 17%, transparent 85%, #080706)
+    }
+
+    .collection-nav {
+        left: 8%;
+        right: 8%;
+        bottom: 65px;
+        transform: none;
+        justify-content: space-between;
+        gap: 8px
+    }
+
+    .collection-nav button {
+        flex-direction: column;
+        gap: 6px;
+        padding: 10px 0
+    }
+
+    .nav-name {
+        font-size: 6px;
+        letter-spacing: .6px
+    }
+
+    .nav-number {
+        font-size: 14px
+    }
+
+    footer {
+        height: 48px;
+        left: 8%;
+        right: 8%;
+        font-size: 6px
+    }
+
+    .footer-note {
+        display: none
+    }
+
+    .sound {
+        font-size: 6px
+    }
+
+    .close-story {
+        font-size: 7px;
+        gap: 12px
+    }
+
+    .close-story span {
+        font-size: 25px
+    }
+
+    .is-story .scene-wrap {
+        top: 9%;
+        height: 35%;
+        bottom: auto;
+        left: 0;
+        right: 0
+    }
+
+    .paper-shell {
+        top: 44%;
+        left: 6%;
+        width: 88%;
+        height: 43%;
+        max-width: none
+    }
+
+    .paper-document {
+        padding: 20px 23px 17px
+    }
+
+    .paper-masthead {
+        font-size: 6px;
+        padding-bottom: 11px;
+        letter-spacing: .7px
+    }
+
+    .paper-reading {
+        margin-top: 17px;
+        padding-right: 5px
+    }
+
+    .paper-kicker {
+        font-size: 6px
+    }
+
+    .paper-reading h2 {
+        font-size: 43px;
+        margin: 12px 0 8px
+    }
+
+    .paper-subtitle {
+        font-size: 7px;
+        letter-spacing: 1.3px
+    }
+
+    .paper-rule {
+        margin: 16px 0
+    }
+
+    .story-body {
+        font-size: 16px;
+        line-height: 1.5
+    }
+
+    .paper-document blockquote {
+        font-size: 24px
+    }
+
+    .paper-footer {
+        font-size: 11px;
+        margin-top: 10px;
+        padding-top: 11px
+    }
+
+    .paper-footer span:last-child {
+        font-size: 8px
+    }
+
+    .paper-controls {
+        padding-top: 10px
+    }
+
+    .paper-controls button {
+        font-size: 6px;
+        letter-spacing: .6px
+    }
+
+    .object-caption {
+        left: 50%;
+        bottom: auto;
+        top: 40.5%;
+        gap: 0
+    }
+
+    .object-caption>span {
+        font-size: 19px
+    }
+
+    .object-caption small {
+        display: none
+    }
+
+    .is-story .collection-nav {
+        left: auto;
+        right: 6%;
+        top: 16%;
+        bottom: auto;
+        flex-direction: column;
+        gap: 5px
+    }
+
+    .is-story .collection-nav button {
+        padding: 6px 4px
+    }
+
+    .is-story .collection-nav .nav-number {
+        font-size: 13px
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+    *,
+    *:before,
+    *:after {
+        transition: none !important;
+        scroll-behavior: auto !important
+    }
+
+    .paper-shell {
+        transform: none !important
+    }
+}
+
+.loading-page {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #080706;
+    color: #ded3be;
+    opacity: 1;
+    transition: opacity .32s ease;
+    pointer-events: auto
+}
+
+.loading-page.is-finishing {
+    opacity: 0;
+    pointer-events: none
+}
+
+.loading-mark {
+    font: 38px/1 Georgia, serif;
+    color: #ad9167;
+    margin-bottom: 26px;
+    animation: loading-breathe 2.4s ease-in-out infinite
+}
+
+.loading-title {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #eee4d2
+}
+
+.loading-subtitle {
+    margin: 12px 0 48px;
+    font: italic 21px/1 'Cormorant Garamond', Georgia, serif;
+    color: #a7977d
+}
+
+.loading-meter {
+    width: min(260px, 42vw);
+    height: 1px;
+    background: #3e3528;
+    overflow: hidden
+}
+
+.loading-meter span {
+    display: block;
+    height: 100%;
+    background: #b99a6a;
+    transition: width .25s ease
+}
+
+.loading-meta {
+    width: min(260px, 42vw);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    color: #817462;
+    font-size: 7px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase
+}
+
+@keyframes loading-breathe {
+
+    0%,
+    100% {
+        opacity: .6;
+        transform: scale(.96)
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+@media(max-width:700px) {
+    .loading-title {
+        font-size: 9px;
+        letter-spacing: 3.4px
+    }
+
+    .loading-subtitle {
+        font-size: 19px;
+        margin-bottom: 40px
+    }
+
+    .loading-meta {
+        font-size: 6px;
+        letter-spacing: 1px
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    .loading-page {
+        transition: none
+    }
+
+    .loading-mark {
+        animation: none
+    }
+}
+
+@media(min-width:701px) {
+    .experience:not(.is-story) .collection-nav {
+        left: 8%;
+        transform: none;
+        gap: 22px;
+        bottom: 105px
+    }
+
+    .object-caption {
+        left: 68%;
+        bottom: 16%
+    }
+
+    .is-story .collection-nav {
+        left: 68%
+    }
+}
+
+/* One collection, one navigation row. */
+header {
+    left: 6%;
+    right: 6%;
+    height: 100px
+}
+
+.hero-copy {
+    left: 8%;
+    top: 31%;
+    max-width: 480px
+}
+
+h1 {
+    margin: 0 0 26px;
+    font-size: clamp(70px, 6.5vw, 104px)
+}
+
+.intro {
+    font-size: 13px;
+    line-height: 1.7;
+    max-width: 290px;
+    color: #b3a999
+}
+
+.explore {
+    font-size: 12px;
+    letter-spacing: .2px;
+    padding: 14px 0;
+    margin-top: 25px;
+    gap: 42px
+}
+
+.collection-nav,
+.experience:not(.is-story) .collection-nav,
+.is-story .collection-nav {
+    left: 50%;
+    right: auto;
+    bottom: 34px;
+    top: auto;
+    transform: translateX(-50%);
+    gap: 0;
+    flex-direction: row;
+    padding: 5px 14px;
+    border: 1px solid #b69b682b;
+    border-radius: 4px;
+    background: #100e0bb8;
+    backdrop-filter: blur(14px)
+}
+
+.collection-nav button,
+.is-story .collection-nav button {
+    padding: 14px 22px;
+    border: 0;
+    border-radius: 2px;
+    min-height: 44px;
+    transition: background .2s, color .2s
+}
+
+.collection-nav button:hover {
+    background: #b69b6810
+}
+
+.collection-nav button.active {
+    background: #b69b6825;
+    color: #f2dfbd
+}
+
+.nav-name,
+.is-story .collection-nav .nav-name {
+    display: block;
+    text-transform: none;
+    font-size: 12px;
+    letter-spacing: .15px
+}
+
+footer {
+    left: 6%;
+    right: 6%;
+    height: auto;
+    bottom: 49px;
+    font-size: 10px;
+    letter-spacing: 0;
+    pointer-events: none
+}
+
+footer a,
+footer button {
+    pointer-events: auto
+}
+
+footer a:hover {
+    color: #dec5a0
+}
+
+.close-story {
+    font-size: 11px;
+    letter-spacing: .4px;
+    text-transform: none
+}
+
+.paper-shell {
+    top: 16%;
+    height: 67%
+}
+
+.paper-reading {
+    margin-top: 0
+}
+
+.paper-reading h2 {
+    margin-top: 7px
+}
+
+.paper-document {
+    padding-top: 34px
+}
+
+.paper-controls {
+    justify-content: space-between
+}
+
+.paper-controls button {
+    font-size: 10px;
+    letter-spacing: .3px;
+    padding: 8px 0
+}
+
+@media(max-width:1100px) and (min-width:701px) {
+
+    .collection-nav button,
+    .is-story .collection-nav button {
+        padding: 13px 18px
+    }
+
+    .hero-copy {
+        left: 5%;
+        max-width: 370px
+    }
+
+    .intro {
+        max-width: 260px
+    }
+}
+
+@media(max-width:700px) {
+    header {
+        left: 6%;
+        right: 6%;
+        height: 80px
+    }
+
+    .experience {
+        min-height: 780px
+    }
+
+    .hero-copy {
+        top: 116px;
+        left: 8%;
+        max-width: 84%
+    }
+
+    h1 {
+        font-size: 61px;
+        margin: 0 0 16px
+    }
+
+    .intro {
+        font-size: 11px;
+        max-width: 240px
+    }
+
+    .explore {
+        font-size: 11px;
+        margin-top: 13px;
+        padding: 10px 0
+    }
+
+    .collection-nav,
+    .experience:not(.is-story) .collection-nav,
+    .is-story .collection-nav {
+        left: 5%;
+        right: 5%;
+        bottom: 29px;
+        top: auto;
+        transform: none;
+        justify-content: space-between;
+        gap: 0;
+        padding: 4px
+    }
+
+    .collection-nav button,
+    .is-story .collection-nav button {
+        padding: 12px 7px;
+        min-height: 43px
+    }
+
+    .nav-name,
+    .is-story .collection-nav .nav-name {
+        font-size: 10px;
+        letter-spacing: 0
+    }
+
+    footer {
+        bottom: 8px;
+        left: 6%;
+        height: auto;
+        font-size: 8px
+    }
+
+    .paper-shell {
+        top: 43%;
+        height: 41%;
+        left: 6%;
+        width: 88%
+    }
+
+    .paper-document {
+        padding: 21px 23px 15px
+    }
+
+    .paper-reading {
+        margin-top: 0
+    }
+
+    .paper-reading h2 {
+        margin-top: 5px
+    }
+
+    .paper-controls {
+        padding-top: 7px
+    }
+
+    .paper-controls button {
+        font-size: 9px
+    }
+}
+
+.is-arabic {
+    font-family: 'IBM Plex Sans Arabic', sans-serif
+}
+
+.is-arabic .wordmark,
+.is-arabic .language-toggle,
+.is-arabic .close-story,
+.is-arabic .sound,
+.is-arabic .collection-nav,
+.is-arabic .paper-controls,
+.is-arabic .paper-footer {
+    letter-spacing: 0
+}
+
+.is-arabic .hero-copy {
+    direction: rtl;
+    text-align: right
+}
+
+.is-arabic h1 {
+    font: 500 clamp(54px, 5.8vw, 91px)/1.18 'Noto Serif Arabic', serif;
+    letter-spacing: 0;
+    margin-top: 19px
+}
+
+.is-arabic h1 em {
+    font-weight: 400
+}
+
+.is-arabic .eyebrow {
+    font-family: Inter, sans-serif;
+    direction: ltr;
+    justify-content: flex-end;
+    letter-spacing: 2px
+}
+
+.is-arabic .intro {
+    font-size: 14px;
+    line-height: 2;
+    max-width: 320px;
+    margin-left: auto
+}
+
+.is-arabic .explore {
+    font-size: 12px;
+    justify-content: flex-start;
+    margin-left: auto;
+    width: max-content
+}
+
+.is-arabic .paper-reading {
+    direction: rtl;
+    text-align: right;
+    padding: 0 0 0 8px
+}
+
+.is-arabic-paper .paper-reading h2 {
+    font: 500 clamp(42px, 4vw, 65px)/1.2 'Noto Serif Arabic', serif;
+    letter-spacing: 0;
+    margin-bottom: 16px
+}
+
+.is-arabic-paper .paper-subtitle {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    letter-spacing: 0;
+    line-height: 1.9
+}
+
+.is-arabic-paper .paper-rule {
+    margin-left: auto;
+    margin-right: 0
+}
+
+.is-arabic-paper .story-body {
+    font: 400 17px/1.85 'IBM Plex Sans Arabic', sans-serif
+}
+
+.is-arabic-paper blockquote {
+    font: 500 25px/1.65 'Noto Serif Arabic', serif
+}
+
+.is-arabic-paper .paper-keywords {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    letter-spacing: 0
+}
+
+.is-arabic .loading-page {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    direction: rtl
+}
+
+.is-arabic .loading-title {
+    font-family: 'Noto Serif Arabic', serif;
+    font-size: 18px;
+    letter-spacing: 0
+}
+
+.is-arabic .loading-subtitle {
+    font-family: 'Noto Serif Arabic', serif;
+    font-size: 19px
+}
+
+@media(max-width:700px) {
+    .header-actions {
+        gap: 13px
+    }
+
+    .language-toggle {
+        font-size: 7px
+    }
+
+    .is-arabic h1 {
+        font-size: 52px;
+        line-height: 1.25
+    }
+
+    .is-arabic .intro {
+        font-size: 12px
+    }
+
+    .is-arabic-paper .paper-reading h2 {
+        font-size: 42px
+    }
+
+    .is-arabic-paper .story-body {
+        font-size: 15px
+    }
+}

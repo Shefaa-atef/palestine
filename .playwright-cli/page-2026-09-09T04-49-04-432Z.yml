@@ -1,0 +1,58 @@
+- main [ref=f11e3]:
+  - generic "Only The key is on display. Move your pointer or drag to turn it." [ref=f11e45]
+  - generic [ref=f11e6]:
+    - link "Fragments of Palestine — return to collection" [ref=f11e7] [cursor=pointer]:
+      - /url: "#"
+      - generic [ref=f11e8]: ❋
+      - generic [ref=f11e9]:
+        - text: FRAGMENTS
+        - generic [ref=f11e10]: OF PALESTINE
+    - generic [ref=f11e11]: A COLLECTION OF MEMORY
+    - button "CLOSE ×" [ref=f11e46] [cursor=pointer]:
+      - text: CLOSE
+      - generic [ref=f11e47]: ×
+  - generic [ref=f11e48]:
+    - article [ref=f11e49]:
+      - generic [ref=f11e50]:
+        - generic [ref=f11e51]: FRAGMENTS OF PALESTINE
+        - generic [ref=f11e52]: MEMORY No. 01
+      - generic "Scroll the story" [ref=f11e53]:
+        - generic [ref=f11e54]: LAND · PEOPLE · MEMORY
+        - heading "The key" [level=2] [ref=f11e55]
+        - paragraph [ref=f11e56]: A home left behind
+        - generic [ref=f11e58]:
+          - paragraph [ref=f11e59]: In 1948, Hakma Atallah was 35 years old. She lived in Al-Swafeer with her husband and five children.
+          - paragraph [ref=f11e60]: Then she fled.
+          - paragraph [ref=f11e61]: "Decades later, she could still describe the home she left behind: four rooms, a garden, women gathering around a fire, bread being baked and shared."
+          - paragraph [ref=f11e62]: For many Palestinians displaced during the Nakba, keys, deeds and photographs became fragments of homes they could no longer reach — carried from one generation to another.
+        - blockquote [ref=f11e63]: A key can outlive a door. And a memory can outlive a house.
+        - paragraph [ref=f11e64]: HOME / DISPLACEMENT / MEMORY / RETURN
+      - generic [ref=f11e65]:
+        - generic [ref=f11e66]: Five objects. One story.
+        - generic [ref=f11e67]: 01 / 05
+    - generic [ref=f11e68]:
+      - button "← PREVIOUS" [ref=f11e69] [cursor=pointer]
+      - button "RETURN TO THE COLLECTION" [ref=f11e70] [cursor=pointer]
+      - button "NEXT →" [ref=f11e71] [cursor=pointer]
+  - generic:
+    - generic: 01 — The key
+    - generic: MOVE YOUR POINTER OR DRAG TO TURN
+  - navigation "Choose an artifact" [ref=f11e13]:
+    - button "Open The key" [active] [ref=f11e14] [cursor=pointer]:
+      - generic [ref=f11e15]: "01"
+    - button "Open The olive" [ref=f11e17] [cursor=pointer]:
+      - generic [ref=f11e18]: "02"
+    - button "Open The watermelon" [ref=f11e20] [cursor=pointer]:
+      - generic [ref=f11e21]: "03"
+    - button "Open The keffiyeh" [ref=f11e23] [cursor=pointer]:
+      - generic [ref=f11e24]: "04"
+    - button "Open The map" [ref=f11e26] [cursor=pointer]:
+      - generic [ref=f11e27]: "05"
+  - generic [ref=f11e29]:
+    - link "View asset credits" [ref=f11e30] [cursor=pointer]:
+      - /url: /asset-credits.txt
+      - text: A LIVING ARCHIVE
+    - generic [ref=f11e31]: ORDINARY OBJECTS. ENDURING MEMORY.
+    - button "Ambient sound unavailable" [ref=f11e32] [cursor=pointer]:
+      - text: SOUND OFF
+      - generic [ref=f11e33]: ○

@@ -1,0 +1,39 @@
+- main [ref=f10e3]:
+  - generic [ref=f10e4]:
+    - link "❋ FRAGMENTS OF PALESTINE" [ref=f10e5] [cursor=pointer]:
+      - /url: "#"
+      - generic [ref=f10e6]: ❋
+      - generic [ref=f10e7]:
+        - text: FRAGMENTS
+        - generic [ref=f10e8]: OF PALESTINE
+    - generic [ref=f10e10]: EST. IN MEMORY — ALWAYS
+  - 'generic "Interactive still life: antique key, olive branch, watermelon, keffiyeh and stone map" [ref=f10e11]'
+  - generic [ref=f10e13]:
+    - button "← BACK TO THE COLLECTION" [ref=f10e51] [cursor=pointer]
+    - generic [ref=f10e52]:
+      - generic [ref=f10e53]:
+        - text: FRAGMENT 03
+        - generic [ref=f10e54]: / 05
+      - heading "The watermelon" [active] [level=2] [ref=f10e55]
+      - generic [ref=f10e56]: When colors became a message
+      - generic [ref=f10e57]:
+        - paragraph [ref=f10e58]: Red. Green. Black. White.
+        - paragraph [ref=f10e59]: The colors of a watermelon are also the colors of the Palestinian flag.
+        - paragraph [ref=f10e60]: After Israel occupied the West Bank and Gaza in 1967, displays of the Palestinian flag were banned or restricted in different periods and contexts.
+        - paragraph [ref=f10e61]: Palestinian artists and activists used the watermelon as a visual symbol carrying those same colors.
+        - paragraph [ref=f10e62]: Over time, an ordinary fruit became internationally recognizable as a symbol of Palestinian identity and resistance.
+      - blockquote [ref=f10e63]: You can restrict a flag. Meaning is harder to restrict.
+      - generic [ref=f10e64]: IDENTITY / COLOR / SYMBOL / RESISTANCE
+    - generic [ref=f10e65]:
+      - button "← PREVIOUS" [ref=f10e66] [cursor=pointer]
+      - generic [ref=f10e67]: 03 / 05
+      - button "NEXT FRAGMENT →" [ref=f10e68] [cursor=pointer]
+  - navigation "Choose an artifact" [ref=f10e23]:
+    - button "Open The key" [ref=f10e24] [cursor=pointer]: "01"
+    - button "Open The olive" [ref=f10e27] [cursor=pointer]: "02"
+    - button "Open The watermelon" [ref=f10e30] [cursor=pointer]: "03"
+    - button "Open The keffiyeh" [ref=f10e33] [cursor=pointer]: "04"
+    - button "Open The map" [ref=f10e36] [cursor=pointer]: "05"
+  - generic [ref=f10e43]:
+    - generic [ref=f10e44]: A LIVING ARCHIVE
+    - button "Sound unavailable until an ambient audio file is added" [ref=f10e47] [cursor=pointer]: SOUND OFF ▂ ▄ ▂ ▆

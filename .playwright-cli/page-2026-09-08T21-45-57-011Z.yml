@@ -1,0 +1,40 @@
+- main [ref=f3e3]:
+  - generic [ref=f3e4]:
+    - link "❋ FRAGMENTS OF PALESTINE" [ref=f3e5] [cursor=pointer]:
+      - /url: "#"
+      - generic [ref=f3e6]: ❋
+      - generic [ref=f3e7]:
+        - text: FRAGMENTS
+        - generic [ref=f3e8]: OF PALESTINE
+    - generic [ref=f3e9]: EST. IN MEMORY — ALWAYS
+  - 'generic "Interactive still life: antique key, olive branch, watermelon, keffiyeh and stone map" [ref=f3e10]'
+  - generic [ref=f3e12]:
+    - button "← BACK TO THE COLLECTION" [ref=f3e42] [cursor=pointer]
+    - generic [ref=f3e43]:
+      - generic [ref=f3e44]:
+        - text: FRAGMENT 05
+        - generic [ref=f3e45]: / 05
+      - heading "The map" [active] [level=2] [ref=f3e64]
+      - generic [ref=f3e47]: A land that changed around its people
+      - generic [ref=f3e48]:
+        - paragraph [ref=f3e65]: Palestinian cities, villages, farms and communities existed across the land long before 1948.
+        - paragraph [ref=f3e66]: During the late Ottoman period and especially under the British Mandate, Jewish immigration to Palestine increased substantially, driven by Zionist migration as well as people escaping persecution in Europe.
+        - paragraph [ref=f3e67]: Conflict grew around immigration, land, political control and competing national movements.
+        - paragraph [ref=f3e68]: War in 1948 transformed the political map.
+        - paragraph [ref=f3e69]: Israel was established and hundreds of thousands of Palestinians were displaced from their homes.
+        - paragraph [ref=f3e70]: Many villages disappeared from later maps. Their names did not disappear from memory.
+      - blockquote [ref=f3e53]: A border can change in a day. Belonging does not.
+      - generic [ref=f3e54]: PLACE / HISTORY / MIGRATION / MEMORY
+    - generic [ref=f3e55]:
+      - button "← PREVIOUS" [ref=f3e56] [cursor=pointer]
+      - generic [ref=f3e57]: 05 / 05
+      - button "NEXT FRAGMENT →" [ref=f3e58] [cursor=pointer]
+  - navigation "Choose an artifact" [ref=f3e20]:
+    - button "Open The key" [ref=f3e21] [cursor=pointer]: "01"
+    - button "Open The olive" [ref=f3e23] [cursor=pointer]: "02"
+    - button "Open The watermelon" [ref=f3e25] [cursor=pointer]: "03"
+    - button "Open The keffiyeh" [ref=f3e27] [cursor=pointer]: "04"
+    - button "Open The map" [ref=f3e29] [cursor=pointer]: "05"
+  - generic [ref=f3e35]:
+    - generic [ref=f3e36]: A LIVING ARCHIVE
+    - button "Sound unavailable until an ambient audio file is added" [ref=f3e38] [cursor=pointer]: SOUND OFF ▂ ▄ ▂ ▆

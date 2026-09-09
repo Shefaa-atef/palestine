@@ -1,0 +1,54 @@
+- generic [ref=e2]:
+  - button "Open menu" [ref=e3]:
+    - generic [ref=e4]: Menu
+  - main [ref=e5]:
+    - region [ref=e6]:
+      - heading "Shefa Atef — The Amazing Programmer" [level=1] [ref=e7]
+      - generic [ref=e9]:
+        - img "The Amazing Programmer comic-book cover"
+      - generic [ref=e10]: Portfolio
+      - generic [ref=e12]: Shefa Atef
+      - generic "2026" [ref=e14]:
+        - generic [aria-hidden] [ref=e15]: "20"
+        - generic [aria-hidden] [ref=e16]: "26"
+      - generic "With great skills come great projects" [ref=e17]:
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - generic [ref=e25]: With great skills come great projects
+            - generic [ref=e26]: With great skills come great projects
+          - generic [ref=e27]:
+            - generic [ref=e28]: With great skills come great projects
+            - generic [ref=e29]: With great skills come great projects
+    - region [ref=e30]:
+      - heading "Designer and developer profile" [level=2] [ref=e31]
+      - figure "Shefa Atef is a UI/UX designer, front-end and mobile developer, and computer science graduate." [ref=e35]:
+        - img "UI/UX designer, front-end and mobile developer — Computer Science graduate" [ref=e36]
+    - region [ref=e38]:
+      - heading "Explore the portfolio" [level=2] [ref=e39]
+      - generic [ref=e41]:
+        - generic [ref=e42]:
+          - button "Open the About Me portfolio page" [ref=e43]
+          - button "Open the Projects portfolio page" [ref=e44]
+          - button "Open the Designs portfolio page" [ref=e45]
+        - generic [ref=e47]: Click any page to see more
+    - region "follow me" [ref=e49]:
+      - generic [ref=e51]:
+        - heading "follow me" [level=2]
+        - link "Shefa-atef on LinkedIn" [ref=e52]:
+          - /url: https://www.linkedin.com/in/shefa-atef/
+          - generic [ref=e53]: Shefa-atef
+        - link "shefaalhindi on Behance" [ref=e54]:
+          - /url: https://www.behance.net/shefaalhindi
+          - generic [ref=e55]: shefaalhindi
+        - link "Shefaa-atef on GitHub" [ref=e56]:
+          - /url: https://github.com/Shefaa-atef
+          - generic [ref=e57]: Shefaa-atef
+        - generic "Direct contact details" [ref=e58]:
+          - link "email me shefaalhendi@gmail.com" [ref=e59]:
+            - /url: mailto:shefaalhendi@gmail.com
+            - generic [ref=e60]: email me
+            - generic [ref=e61]: shefaalhendi@gmail.com
+          - link "call me +962 787980339" [ref=e62]:
+            - /url: tel:+962787980339
+            - generic [ref=e63]: call me
+            - generic [ref=e64]: +962 787980339

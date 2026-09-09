@@ -1,0 +1,38 @@
+- main [ref=f3e3]:
+  - generic [ref=f3e4]:
+    - link "❋ FRAGMENTS OF PALESTINE" [ref=f3e5] [cursor=pointer]:
+      - /url: "#"
+      - generic [ref=f3e6]: ❋
+      - generic [ref=f3e7]:
+        - text: FRAGMENTS
+        - generic [ref=f3e8]: OF PALESTINE
+    - generic [ref=f3e9]: EST. IN MEMORY — ALWAYS
+  - 'generic "Interactive still life: antique key, olive branch, watermelon, keffiyeh and stone map" [ref=f3e10]'
+  - generic [ref=f3e12]:
+    - button "← BACK TO THE COLLECTION" [ref=f3e42] [cursor=pointer]
+    - generic [ref=f3e43]:
+      - generic [ref=f3e44]:
+        - text: FRAGMENT 01
+        - generic [ref=f3e45]: / 05
+      - heading "The key" [active] [level=2] [ref=f3e46]
+      - generic [ref=f3e47]: A home left behind
+      - generic [ref=f3e48]:
+        - paragraph [ref=f3e49]: In 1948, Hakma Atallah was 35 years old. She lived in Al-Swafeer with her husband and five children.
+        - paragraph [ref=f3e50]: Then she fled.
+        - paragraph [ref=f3e51]: "Decades later, she could still describe the home she left behind: four rooms, a garden, women gathering around a fire, bread being baked and shared."
+        - paragraph [ref=f3e52]: For many Palestinians displaced during the Nakba, keys, deeds and photographs became fragments of homes they could no longer reach — carried from one generation to another.
+      - blockquote [ref=f3e53]: A key can outlive a door. And a memory can outlive a house.
+      - generic [ref=f3e54]: HOME / DISPLACEMENT / MEMORY / RETURN
+    - generic [ref=f3e55]:
+      - button "← PREVIOUS" [ref=f3e56] [cursor=pointer]
+      - generic [ref=f3e57]: 01 / 05
+      - button "NEXT FRAGMENT →" [ref=f3e58] [cursor=pointer]
+  - navigation "Choose an artifact" [ref=f3e20]:
+    - button "Open The key" [ref=f3e21] [cursor=pointer]: "01"
+    - button "Open The olive" [ref=f3e23] [cursor=pointer]: "02"
+    - button "Open The watermelon" [ref=f3e25] [cursor=pointer]: "03"
+    - button "Open The keffiyeh" [ref=f3e27] [cursor=pointer]: "04"
+    - button "Open The map" [ref=f3e29] [cursor=pointer]: "05"
+  - generic [ref=f3e35]:
+    - generic [ref=f3e36]: A LIVING ARCHIVE
+    - button "Sound unavailable until an ambient audio file is added" [ref=f3e38] [cursor=pointer]: SOUND OFF ▂ ▄ ▂ ▆

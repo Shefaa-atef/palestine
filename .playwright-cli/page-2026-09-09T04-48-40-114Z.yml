@@ -1,0 +1,35 @@
+- main [ref=f11e3]:
+  - generic "Five Palestinian objects gathered in a warmly lit 3D still life" [ref=f11e4]: Gathering the fragments…
+  - generic [ref=f11e6]:
+    - link "Fragments of Palestine — return to collection" [ref=f11e7] [cursor=pointer]:
+      - /url: "#"
+      - generic [ref=f11e8]: ❋
+      - generic [ref=f11e9]:
+        - text: FRAGMENTS
+        - generic [ref=f11e10]: OF PALESTINE
+    - generic [ref=f11e11]: A COLLECTION OF MEMORY
+    - generic [ref=f11e12]: LAND. PEOPLE. STILL HERE.
+  - navigation "Choose an artifact" [ref=f11e13]:
+    - button "Open The key" [ref=f11e14] [cursor=pointer]:
+      - generic [ref=f11e15]: "01"
+      - generic [ref=f11e16]: key
+    - button "Open The olive" [ref=f11e17] [cursor=pointer]:
+      - generic [ref=f11e18]: "02"
+      - generic [ref=f11e19]: olive
+    - button "Open The watermelon" [ref=f11e20] [cursor=pointer]:
+      - generic [ref=f11e21]: "03"
+      - generic [ref=f11e22]: watermelon
+    - button "Open The keffiyeh" [ref=f11e23] [cursor=pointer]:
+      - generic [ref=f11e24]: "04"
+      - generic [ref=f11e25]: keffiyeh
+    - button "Open The map" [ref=f11e26] [cursor=pointer]:
+      - generic [ref=f11e27]: "05"
+      - generic [ref=f11e28]: map
+  - generic [ref=f11e29]:
+    - link "View asset credits" [ref=f11e30] [cursor=pointer]:
+      - /url: /asset-credits.txt
+      - text: A LIVING ARCHIVE
+    - generic [ref=f11e31]: ORDINARY OBJECTS. ENDURING MEMORY.
+    - button "Ambient sound unavailable" [ref=f11e32] [cursor=pointer]:
+      - text: SOUND OFF
+      - generic [ref=f11e33]: ○

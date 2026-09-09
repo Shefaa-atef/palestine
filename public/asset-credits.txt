@@ -1,0 +1,23 @@
+FRAGMENTS OF PALESTINE — ASSET CREDITS
+
+Historical map outline:
+Mandatory Palestine Silhouette Template, by Hstoops (2024).
+https://commons.wikimedia.org/wiki/File:Mandatory_Palestine_Silhouette_Template.svg
+License: Creative Commons Attribution-ShareAlike 4.0 International
+https://creativecommons.org/licenses/by-sa/4.0/
+Modifications: scaled and extruded into a limestone 3D artifact; original contour preserved.
+The adapted map geometry is distributed under CC BY-SA 4.0.
+Original outline: /palestine-outline.svg
+
+Keffiyeh, watermelon flesh, and limestone material maps:
+Generated using the built-in OpenAI image-generation tool for this project.
+Prompts: /textures/GENERATION.md
+These are material textures applied to 3D objects, not replacement scene images.
+
+Other geometry and procedural material maps:
+Created for Fragments of Palestine.
+
+Archival story paper:
+public/textures/archive-paper.png — generated with the built-in image-generation tool.
+Full prompt: /textures/ARCHIVE-PAPER.md
+The story document contains accessible HTML text over the paper texture.

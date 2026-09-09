@@ -1,0 +1,22 @@
+- main [ref=f13e3]:
+  - generic "Five Palestinian objects gathered in a warmly lit 3D still life" [ref=f13e4]: Gathering the fragments…
+  - link "Fragments of Palestine — return to collection" [ref=f13e7] [cursor=pointer]:
+    - /url: "#"
+    - generic [ref=f13e8]: ❋
+    - generic [ref=f13e9]:
+      - text: FRAGMENTS
+      - generic [ref=f13e10]: OF PALESTINE
+  - navigation "Choose an artifact" [ref=f13e11]:
+    - button "Open The key" [ref=f13e12] [cursor=pointer]:
+      - generic [ref=f13e13]: key
+    - button "Open The olive" [ref=f13e14] [cursor=pointer]:
+      - generic [ref=f13e15]: olive
+    - button "Open The watermelon" [ref=f13e16] [cursor=pointer]:
+      - generic [ref=f13e17]: watermelon
+    - button "Open The keffiyeh" [ref=f13e18] [cursor=pointer]:
+      - generic [ref=f13e19]: keffiyeh
+    - button "Open The map" [ref=f13e20] [cursor=pointer]:
+      - generic [ref=f13e21]: map
+  - link "View asset credits" [ref=f13e22] [cursor=pointer]:
+    - /url: /asset-credits.txt
+    - text: Credits

@@ -1,0 +1,45 @@
+- main [ref=f5e3]:
+  - generic [ref=f5e4]:
+    - link "❋ FRAGMENTS OF PALESTINE" [ref=f5e5] [cursor=pointer]:
+      - /url: "#"
+      - generic [ref=f5e6]: ❋
+      - generic [ref=f5e7]:
+        - text: FRAGMENTS
+        - generic [ref=f5e8]: OF PALESTINE
+    - generic [ref=f5e9]: AN INTERACTIVE COLLECTION OF MEMORY
+    - generic [ref=f5e10]: EST. IN MEMORY — ALWAYS
+  - 'generic "Interactive still life: antique key, olive branch, watermelon, keffiyeh and stone map" [ref=f5e11]': Gathering the fragments…
+  - generic [ref=f5e13]:
+    - generic [ref=f5e14]: LAND / PEOPLE / MEMORY / STILL HERE
+    - heading [level=1] [ref=f5e16]:
+      - text: Five Objects.
+      - emphasis [ref=f5e17]: One Story.
+    - paragraph [ref=f5e18]: Fragments of a land.Pieces of a people.A story that lives on.
+    - button "EXPLORE THE STORY ↗" [ref=f5e19] [cursor=pointer]:
+      - text: EXPLORE THE STORY
+      - generic [ref=f5e20]: ↗
+    - generic [ref=f5e21]: Ordinary objects. Extraordinary belonging.
+  - navigation "Choose an artifact" [ref=f5e23]:
+    - button "Open The key" [ref=f5e24] [cursor=pointer]:
+      - generic [ref=f5e25]: The key
+      - text: "01"
+    - button "Open The olive" [ref=f5e27] [cursor=pointer]:
+      - generic [ref=f5e28]: The olive
+      - text: "02"
+    - button "Open The watermelon" [ref=f5e30] [cursor=pointer]:
+      - generic [ref=f5e31]: The watermelon
+      - text: "03"
+    - button "Open The keffiyeh" [ref=f5e33] [cursor=pointer]:
+      - generic [ref=f5e34]: The keffiyeh
+      - text: "04"
+    - button "Open The map" [ref=f5e36] [cursor=pointer]:
+      - generic [ref=f5e37]: The map
+      - text: "05"
+  - generic [ref=f5e39]:
+    - generic [ref=f5e40]: +
+    - generic [ref=f5e41]: FIVE FRAGMENTS. ONE UNBROKEN THREAD.
+    - generic [ref=f5e42]: Move closer. Every object holds a story.
+  - generic [ref=f5e43]:
+    - generic [ref=f5e44]: A LIVING ARCHIVE
+    - generic [ref=f5e46]: ROOTED IN LAND. CARRIED IN MEMORY.
+    - button "Sound unavailable until an ambient audio file is added" [ref=f5e47] [cursor=pointer]: SOUND OFF ▂ ▄ ▂ ▆
