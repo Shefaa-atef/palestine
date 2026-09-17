@@ -1,70 +1,95 @@
 # Fragments of Palestine
 
-A single-viewport React / TypeScript / React Three Fiber storytelling experience.
+An interactive 3D storytelling experience built around five symbolic objects: a key, an olive branch, a watermelon, a keffiyeh, and a map of Palestine. Select an object to inspect it and read its story on an archival paper panel.
 
-## Run
+[Explore the experience](https://shefaa-atef.github.io/palestine/)
+
+## Features
+
+- A real-time 3D still life with procedural geometry and textured materials.
+- English and Arabic stories, with RTL layout and a saved language preference.
+- Object selection, inspection, pointer movement, and drag rotation.
+- Keyboard navigation and selectable HTML story text.
+- Reduced-motion support and a camera layout that adapts to mobile screens.
+- Optional, user-initiated ambient audio.
+
+## Built with
+
+React 19, TypeScript, Vite 8, Three.js, React Three Fiber, Drei, postprocessing, and GSAP.
+
+## Run locally
+
+Use Node.js 22.12 or later in the 22.x series and npm, matching the deployment workflow's Node major version.
 
 ```sh
-npm install
+git clone https://github.com/Shefaa-atef/palestine.git
+cd palestine
+npm ci
 npm run dev
-npm run build
-npm run preview
 ```
 
-Development URL: http://127.0.0.1:5173. The development server uses polling to avoid Windows EBUSY errors when large texture files are added.
+Open the URL printed by Vite, typically `http://127.0.0.1:5173/palestine/`. The development server uses polling to accommodate large texture-file updates on Windows.
 
-## GitHub Pages
+## Commands
 
-The `main` branch deploys automatically through GitHub Actions. After enabling GitHub Pages with **GitHub Actions** as the source, the site is available at:
-
-https://shefaa-atef.github.io/palestine/
-
-## Rebuilt still-life assets
-
-- Antique key: asymmetric cast bow, shaped ward, weathered shaft and collars.
-- Olive: curved tapered branches, individually curved and veined lanceolate leaves, mottled olives, and fallen fruit.
-- Watermelon: a spherical sector with two angled cut faces, curved striped rind, pith, and three-dimensional seeds. This is a volumetric mesh, not a plane or a stack of discs.
-- Keffiyeh: a continuous sheet folded back over itself, with a generated woven black-and-ivory material. Fringe starts at the exact cloth-edge positions. Cords and knots are merged into two meshes to reduce draw calls.
-- Map: the sourced historical Palestine silhouette, extruded and textured as limestone. Source and license: [asset credits](public/asset-credits.txt).
-
-The scene uses real 3D geometry throughout. Texture maps are applied to the meshes; no static still-life image replaces the scene. Materials were generated with the built-in image-generation tool; [paths and prompts](public/textures/GENERATION.md).
-
-Implementation: `src/components/Models.tsx`, `src/three/textures.ts`, `src/components/GroundDetails.tsx`. Composition, lighting, focus, and camera behavior: `src/components/Scene.tsx`. Narrative content: `src/data/artifacts.ts`.
-
-## Optional GLB replacements
-
-The model loader checks for valid binary glTF data at:
-
-- `public/models/key.glb`
-- `public/models/olive.glb`
-- `public/models/watermelon.glb`
-- `public/models/keffiyeh.glb`
-- `public/models/palestine.glb`
-
-Absent files leave the built-in meshes in place. Export bottom-center origins, +Y up and +Z toward the viewer. Approximate model heights: key 2.9, olive 3.7, watermelon 1.2, folded cloth 0.9, map 3.19; cloth width 2.25. Apply transforms before export. Keep texture sizes and mesh density reasonable; use static cloth.
-
-## Sound
-
-Add `public/audio/ambient.mp3` to enable the opt-in ambient sound control. Until then sound stays off. It never starts without interaction.
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Start Vite. |
+| `npm run build` | Run the TypeScript build and create `dist/`. |
+| `npm run preview` | Preview the production build. |
+| `npm run lint` | Run Oxlint. |
 
 ## Controls
 
-Click the objects or numbered HTML buttons. Left/right arrows cycle and wrap; Escape returns to the collection. Story headings receive focus when changed. Long stories scroll inside their reading area. Reduced motion disables idle motion and parallax. Mobile adjusts the camera to retain the grouped composition.
+- Select an object in the scene or use its navigation button.
+- Move the pointer or drag to turn the selected object.
+- Use the left/right arrow keys to cycle through the collection.
+- Use Close or Escape to return to all five objects.
+- Scroll inside the paper panel to read longer stories.
+- Switch between English and Arabic in the header.
 
-## Checks
+Reduced-motion preferences disable idle motion and parallax. Story text remains selectable and keyboard-readable.
 
-Production build and lint are checked. Browser verification covers desktop 1440×900, mobile 390×844, direct raycast selection, story navigation, and Escape. Latest captures are under `output/playwright/`.
+## Source guide
 
-Known tooling notices: Vite reports the size of the lazily loaded Three.js chunk. R3F/Three.js emits a Clock deprecation notice; the Windows shader compiler can also emit numeric-precision warnings. Neither blocked rendering in the browser checks. Google Fonts has local serif/sans-serif fallbacks.
+| Path | Purpose |
+| --- | --- |
+| `src/App.tsx` | Selection, language, keyboard controls, and optional audio. |
+| `src/components/Scene.tsx` | Composition, lighting, focus, and camera behavior. |
+| `src/components/Models.tsx` | Procedural objects and optional model loading. |
+| `src/components/StoryPaper.tsx` | Archival paper and reading panel. |
+| `src/components/GroundDetails.tsx` | Ground details. |
+| `src/three/textures.ts` | Material and texture helpers. |
+| `src/data/artifacts.ts` | Bilingual artifact stories. |
 
-## Isolated object / old-paper redesign
+## Assets and credits
 
-The presentation now uses a full-screen dark display and a warm upper-left spotlight with low fill and restrained dusty haze. The key has irregular worn edges and a separate oxidized-iron material with rust, pitting, scratches, and roughness/metalness maps.
+The built-in scene uses three-dimensional geometry: a weathered key, curved olive branches, a volumetric watermelon segment, folded woven cloth, and an extruded historical Palestine silhouette.
 
-Selecting an object fades and hides the other four, moves the chosen object into an enlarged inspection pose, and brings in a textured archival paper sheet. Pointer movement turns the object, and dragging adds rotation. Previous/next navigation replaces both the artifact and document; Close and Escape restore the full collection. Reduced-motion mode removes the entrance turn, idle motion, and paper movement.
+- [Asset sources and credits](public/asset-credits.txt)
+- [Texture-generation paths and prompts](public/textures/GENERATION.md)
+- [Archival paper asset and prompt](public/textures/ARCHIVE-PAPER.md)
 
-`src/components/StoryPaper.tsx` owns the paper presentation. The reading area scrolls independently, with a cue until the end of the story is reached. The document is HTML, so its text stays selectable and keyboard-readable.
+### Optional GLB models
 
-Paper asset and full generation prompt: [ARCHIVE-PAPER.md](public/textures/ARCHIVE-PAPER.md).
+To replace the procedural objects, place valid binary glTF files at:
 
-Validation: build and lint pass; browser scene inspection confirmed that each of the five selections leaves exactly one artifact visible. Mobile document scrolling, drag rotation, and reduced-motion settings were checked without browser errors. Previews: `output/playwright/archive-key.png`, `archive-mobile-map.png`, and `archive-hero.png`.
+```text
+public/models/key.glb
+public/models/olive.glb
+public/models/watermelon.glb
+public/models/keffiyeh.glb
+public/models/palestine.glb
+```
+
+Missing files leave the built-in meshes in place. Export with bottom-center origins, +Y up, and +Z toward the viewer. Approximate model heights are key 2.9, olive 3.7, watermelon 1.2, folded cloth 0.9, and map 3.19; cloth width is 2.25. Apply transforms before export and use static cloth.
+
+### Optional audio
+
+Add `public/audio/ambient.mp3` to enable the sound control. Playback starts only after user interaction. The experience works without this file.
+
+## Deployment and checks
+
+Pushes to `main` run `.github/workflows/deploy-pages.yml`. Configure GitHub Pages to use **GitHub Actions**. Vite's base path is `/palestine/`; update it when hosting elsewhere.
+
+Before publishing, run build and lint, then check all five selections, keyboard navigation, Arabic layout, mobile story scrolling, drag rotation, and reduced-motion behavior. Existing browser captures are stored in `output/playwright/`; they are historical artifacts rather than evidence that the current revision has been retested.
